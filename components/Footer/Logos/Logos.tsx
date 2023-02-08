@@ -12,6 +12,7 @@ const Logos: FC = () => {
         justifyContent: { xs: "center", md: "start" },
         gap: "20px",
         flexWrap: "wrap",
+        width: "100%"
       }}
     >
       {logosData.map((logo, index) => {

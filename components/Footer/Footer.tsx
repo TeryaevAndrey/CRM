@@ -5,6 +5,7 @@ import Logo from "../Logo";
 import AnotherLink from "./AnotherLink";
 import FooterMenu from "./FooterMenu/FooterMenu";
 import Logos from "./Logos/Logos";
+import Socials from "./Socials/Socials";
 
 const Footer: FC = () => {
   return (
@@ -29,7 +30,7 @@ const Footer: FC = () => {
                 justifyContent: "space-between",
               }}
             >
-              <Logo white/>
+              <Logo white />
               <Tel left={true} mt="auto" white />
             </Grid>
             <Grid item xs={4}>
@@ -49,7 +50,17 @@ const Footer: FC = () => {
             <AnotherLink href="/offer.pdf" title="Договор оферты" />
             <AnotherLink href="/pay.docx" title="Проведение оплаты" />
           </Box>
-          <Logos />
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "flex-start",
+              flexDirection: "column"
+            }}
+          >
+            <Logos />
+            <Socials />
+          </Box>
         </Container>
       </Grid>
       <Grid
@@ -93,7 +104,16 @@ const Footer: FC = () => {
             <AnotherLink href="/offer.pdf" title="Договор оферты" />
             <AnotherLink href="/pay.docx" title="Проведение оплаты" />
           </Box>
-          <Logos />
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "flex-start",
+            }}
+          >
+            <Logos />
+            <Socials />
+          </Box>
         </Container>
       </Grid>
     </>
